@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a690fffd-3e47-408f-afbf-977030d5d6e7" name="Default Changelist" comment="" />
+    <list default="true" id="a690fffd-3e47-408f-afbf-977030d5d6e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Workout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Workout.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterFromRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RegisterFromRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +30,10 @@
       <executable />
     </execution>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.4">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/laravel/framework" />
       <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
@@ -127,16 +147,22 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1e7kssKEP1vPQBK3nzObiZy0ohL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -162,7 +188,8 @@
       <workItem from="1593683760767" duration="668000" />
       <workItem from="1593684459928" duration="1349000" />
       <workItem from="1593685931535" duration="896000" />
-      <workItem from="1593686893497" duration="135000" />
+      <workItem from="1593686893497" duration="295000" />
+      <workItem from="1593743199354" duration="18231000" />
     </task>
     <servers />
   </component>
@@ -170,29 +197,49 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="565" y="134" key="#CLI_Interpreters" timestamp="1593761288945">
+      <screen x="0" y="23" width="1920" height="987" />
+    </state>
+    <state x="565" y="134" key="#CLI_Interpreters/0.23.1920.987@0.23.1920.987" timestamp="1593761288945" />
+    <state x="652" y="57" key="#PHP" timestamp="1593761290770">
+      <screen x="0" y="23" width="1920" height="987" />
+    </state>
+    <state x="652" y="57" key="#PHP/0.23.1920.987@0.23.1920.987" timestamp="1593761290769" />
+    <state x="770" y="81" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593750603457">
+      <screen x="0" y="23" width="1920" height="987" />
+    </state>
+    <state x="770" y="81" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1920.987@0.23.1920.987" timestamp="1593750603457" />
     <state x="618" y="134" key="#phpunit.xml" timestamp="1593684536946">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state x="618" y="134" key="#phpunit.xml/0.23.1920.987@0.23.1920.987" timestamp="1593684536946" />
-    <state width="1878" height="237" key="GridCell.Tab.0.bottom" timestamp="1593683378645">
+    <state width="1878" height="237" key="GridCell.Tab.0.bottom" timestamp="1593761295105">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.0.bottom/0.23.1920.987@0.23.1920.987" timestamp="1593683378645" />
-    <state width="1878" height="237" key="GridCell.Tab.0.center" timestamp="1593683378644">
+    <state width="1878" height="237" key="GridCell.Tab.0.bottom/0.23.1920.987@0.23.1920.987" timestamp="1593761295105" />
+    <state width="1878" height="237" key="GridCell.Tab.0.center" timestamp="1593761295105">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.0.center/0.23.1920.987@0.23.1920.987" timestamp="1593683378644" />
-    <state width="1878" height="237" key="GridCell.Tab.0.left" timestamp="1593683378644">
+    <state width="1878" height="237" key="GridCell.Tab.0.center/0.23.1920.987@0.23.1920.987" timestamp="1593761295105" />
+    <state width="1878" height="237" key="GridCell.Tab.0.left" timestamp="1593761295104">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.0.left/0.23.1920.987@0.23.1920.987" timestamp="1593683378644" />
-    <state width="1878" height="237" key="GridCell.Tab.0.right" timestamp="1593683378645">
+    <state width="1878" height="237" key="GridCell.Tab.0.left/0.23.1920.987@0.23.1920.987" timestamp="1593761295104" />
+    <state width="1878" height="237" key="GridCell.Tab.0.right" timestamp="1593761295105">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state width="1878" height="237" key="GridCell.Tab.0.right/0.23.1920.987@0.23.1920.987" timestamp="1593683378645" />
-    <state x="62" y="366" width="667" height="486" key="find.popup" timestamp="1593683738056">
+    <state width="1878" height="237" key="GridCell.Tab.0.right/0.23.1920.987@0.23.1920.987" timestamp="1593761295105" />
+    <state x="756" y="296" key="NewPhpClassDialog" timestamp="1593750565780">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state x="62" y="366" width="667" height="486" key="find.popup/0.23.1920.987@0.23.1920.987" timestamp="1593683738056" />
+    <state x="756" y="296" key="NewPhpClassDialog/0.23.1920.987@0.23.1920.987" timestamp="1593750565780" />
+    <state x="62" y="366" width="667" height="486" key="find.popup" timestamp="1593765969119">
+      <screen x="0" y="23" width="1920" height="987" />
+    </state>
+    <state x="62" y="366" width="667" height="486" key="find.popup/0.23.1920.987@0.23.1920.987" timestamp="1593765969119" />
+    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup" timestamp="1593765978258">
+      <screen x="0" y="23" width="1920" height="987" />
+    </state>
+    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup/0.23.1920.987@0.23.1920.987" timestamp="1593765978258" />
   </component>
 </project>
