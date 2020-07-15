@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //    return $request->user();
 //});
 
-Route::post('signup', 'AuthController@register');
+Route::post('register', 'AuthController@register');
 Route::post('login', 'AuthController@login');
 
 Route::group(['middleware' => 'jwt.auth'], function () { Route::get('auth', 'AuthController@user');

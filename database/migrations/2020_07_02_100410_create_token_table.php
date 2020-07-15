@@ -15,9 +15,11 @@ class CreateTokenTable extends Migration
     {
         Schema::create('token', function (Blueprint $table) {
             $table->id();
-            $table->string('token');
+            $table->string('token', 500);
             $table->unsignedInteger('user_id');
             $table->timestamps();
+            $table->string('device_id');
+            $table->string('os');
         });
     }
 

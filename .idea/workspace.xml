@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a690fffd-3e47-408f-afbf-977030d5d6e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Workout.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Workout.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AuthController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/RegisterFromRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/RegisterFromRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Tokens.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Tokens.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_02_100410_create_token_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_02_100410_create_token_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_03_040956_change_column_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_03_065701_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_07_03_065701_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +183,11 @@
       <workItem from="1593685931535" duration="896000" />
       <workItem from="1593686893497" duration="295000" />
       <workItem from="1593743199354" duration="18231000" />
+      <workItem from="1594354327604" duration="1019000" />
+      <workItem from="1594604894910" duration="5711000" />
+      <workItem from="1594629916676" duration="1977000" />
+      <workItem from="1594694929452" duration="12576000" />
+      <workItem from="1594788953657" duration="2602000" />
     </task>
     <servers />
   </component>
@@ -233,13 +231,13 @@
       <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state x="756" y="296" key="NewPhpClassDialog/0.23.1920.987@0.23.1920.987" timestamp="1593750565780" />
-    <state x="62" y="366" width="667" height="486" key="find.popup" timestamp="1593765969119">
+    <state x="62" y="366" width="667" height="486" key="find.popup" timestamp="1594629480573">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state x="62" y="366" width="667" height="486" key="find.popup/0.23.1920.987@0.23.1920.987" timestamp="1593765969119" />
-    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup" timestamp="1593765978258">
+    <state x="62" y="366" width="667" height="486" key="find.popup/0.23.1920.987@0.23.1920.987" timestamp="1594629480573" />
+    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup" timestamp="1594630469282">
       <screen x="0" y="23" width="1920" height="987" />
     </state>
-    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup/0.23.1920.987@0.23.1920.987" timestamp="1593765978258" />
+    <state x="912" y="254" width="670" height="676" key="search.everywhere.popup/0.23.1920.987@0.23.1920.987" timestamp="1594630469282" />
   </component>
 </project>

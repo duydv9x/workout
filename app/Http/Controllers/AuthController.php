@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\RegisterFromRequest;
+use App\Tokens;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Tymon\JWTAuth\Facades\JWTAuth;
@@ -15,21 +16,33 @@ class AuthController extends Controller
     //
     public function register(RegisterFromRequest $request)
     {
-        $params = $request->only('email', 'username', 'name', 'password');
+        /**
+         * gender: [0 - Other, 1 - Male, 2 - Female]
+         * user_type: [11 - Normal User, 21 - Coach]
+         */
+        $params = $request->only('email', 'username', 'password', 'user_type', 'gender');
         $user = new User();
         $user->email = $params['email'];
-        $user->name = $params['name'];
         $user->username = $params['username'];
+        $user->gender = $params['gender'];
+        $user->user_type = $params['user_type'];
         $user->password = bcrypt($params['password']);
         $user->save();
 
-        return response()->json($user, Response::HTTP_OK);
+        return response()->json(
+            ['message' => 'Register Success, You are logged in!',
+            'code' => 200,
+            'data' => []
+            ], Response::HTTP_OK);
     }
 
     public function login(Request $request)
     {
         $username = $this->findUsername($request);
+        $params = $request->only($username, 'device_id', 'os');
         $credentials = $request->only($username, 'password');
+        $device_id = $params['device_id'];
+        $os        = $params['os'];
         $token = JWTAuth::attempt($credentials, ['exp' => Carbon::now()->addMinutes(1)->timestamp]);
         if (!$token) {
             return response()->json([
@@ -43,11 +56,19 @@ class AuthController extends Controller
 
         $user = User::query()->where($username, '=', $login)->first();
 
-        $user->tokens()->create([
-            'token' => $token,
-        ]);
+        if (Tokens::where('user_id', '=', $user->id)->count())
+        {
+            Tokens::where('user_id', '=', $user->id)->update(['token' => $token]);
+        } else
+        {
+            $user->tokens()->create([
+                'token' => $token,
+                'device_id' => $device_id,
+                'os' => $os,
+            ]);
+        }
 
-        return response()->json(['token' => $token], Response::HTTP_OK);
+        return response()->json(['code' => 200, 'data' =>['user' => $user, 'token' => $token]], Response::HTTP_OK);
     }
 
     public function user(Request $request)
