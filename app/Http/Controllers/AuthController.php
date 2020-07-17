@@ -32,7 +32,6 @@ class AuthController extends Controller
         return response()->json(
             ['message' => 'Register Success, You are logged in!',
             'code' => 200,
-            'data' => []
             ], Response::HTTP_OK);
     }
 
@@ -79,8 +78,6 @@ class AuthController extends Controller
             return response()->json(['message' => 'Token Expired'], 401);
         }
 
-        $user = Auth::user();
-
         if ($user) {
             return response($user, Response::HTTP_OK);
         }
@@ -96,14 +93,27 @@ class AuthController extends Controller
      * @param Request $request
      */
     public function logout(Request $request) {
-        $this->validate($request, ['token' => 'required']);
 
-        try {
-            JWTAuth::invalidate($request->input('token'));
-            return response()->json('You have successfully logged out.', Response::HTTP_OK);
-        } catch (JWTException $e) {
-            return response()->json('Failed to logout, please try again.', Response::HTTP_BAD_REQUEST);
+        try{
+            $user = JWTAuth::parseToken()->authenticate();
+        } catch (TokenExpiredException $e) {
+            return response()->json(['message' => 'Token Expired'], 401);
         }
+
+        Tokens::where('user_id', '=', $user->id)->delete();
+
+        return response()->json(
+            ['message' => 'Logged out.',
+                'code' => 200,
+            ], Response::HTTP_OK);
+
+//        $this->validate($request, ['token' => 'required']);
+//        try {
+//            JWTAuth::invalidate($request->input('token'));
+//            return response()->json('You have successfully logged out.', Response::HTTP_OK);
+//        } catch (JWTException $e) {
+//            return response()->json('Failed to logout, please try again.', Response::HTTP_BAD_REQUEST);
+//        }
     }
 
     public function refresh()

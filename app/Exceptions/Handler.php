@@ -3,7 +3,10 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\JsonResponse;
 use Throwable;
+use Tymon\JWTAuth\Exceptions\TokenExpiredException;
+use Tymon\JWTAuth\Exceptions\TokenInvalidException;
 
 class Handler extends ExceptionHandler
 {
@@ -50,6 +53,17 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Throwable $exception)
     {
-        return parent::render($request, $exception);
+        $code = JsonResponse::HTTP_BAD_REQUEST;
+        if ($exception instanceof TokenExpiredException) {
+            $code = JsonResponse::HTTP_UNAUTHORIZED;
+        }
+
+        return response()->json([
+            'code' => $code,
+            'message' => $exception->getMessage(),
+//            'debug' => $exception->getTraceAsString()
+        ], $code);
+
+//        return parent::render($request, $exception);
     }
 }

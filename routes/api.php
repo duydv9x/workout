@@ -21,8 +21,14 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', 'AuthController@register');
 Route::post('login', 'AuthController@login');
 
-Route::group(['middleware' => 'jwt.auth'], function () { Route::get('auth', 'AuthController@user');
-
-Route::post('logout', 'AuthController@logout'); });
+Route::group(['middleware' => 'jwt.auth'], function () {
+    Route::get('auth', 'AuthController@user');
+    Route::post('logout', 'AuthController@logout');
+    Route::get('products', 'ProductController@index');
+    Route::get('products/{id}', 'ProductController@show');
+    Route::post('products', 'ProductController@store');
+    Route::put('products/{id}', 'ProductController@update');
+    Route::delete('products/{id}', 'ProductController@destroy');
+});
 
 Route::middleware('jwt.refresh')->get('/token/refresh', 'AuthController@refresh');
